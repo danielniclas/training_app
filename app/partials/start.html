@@ -1,0 +1,59 @@
+
+
+
+
+<div class="well">
+
+
+    <p>Start Here -- start.html.</p>
+
+
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <h1 class="text-center">Ready for a Workout [start.html partial]</h1>
+        <br />
+        <img src="img/start.png" style="width:70%" class="center-block"/>
+        <br />
+        <div id="start" class="row">
+
+            <a href="#/workout">
+                <span>Start</span>
+                <span class="glyphicon glyphicon-play"></span>
+            </a>
+
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+
+
+
+
+
+
+
+
+    Current Exercise: {{currentExercise.details.title}}
+    <br> <br>
+
+    <img ng-src="{{currentExercise.details.image}}" height="140" width="180"/>
+    <br> <br>
+
+    <button class="btn btn-success" type="button">
+        Current Exercise Duration:&nbsp; <span class="badge">{{currentExerciseDuration}} </span>  sec
+    </button>
+
+    <br> <br>
+
+    <button class="btn btn-success" type="button">
+        Current Exercise Duration: &nbsp; <span class="badge">{{currentExercise.duration}} </span>  sec
+    </button>
+
+    <br> <br>
+
+    <p>
+        Promises: <span class="badge">{{promises}}</span>
+    </p>
+
+</div>
+
+
